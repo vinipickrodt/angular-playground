@@ -1,0 +1,9 @@
+<div>
+    <p>my-component works!</p>
+    <input #searchInput type="text" [value]="valor" (keyup)="onKeyUp($event)" (change)="onKeyUp($event)"
+        [autofocus]="valor == ''" />
+    <input type="button" value="Enviar" (click)="onClick()" />
+    <ul *ngFor="let valor of valores">
+        <li>{{valor}}</li>
+    </ul>
+</div>
